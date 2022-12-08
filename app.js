@@ -82,7 +82,7 @@ router.post('/contact', function (req, res) {
   }
 });
 
-app.use('', router);
+app.use('/', router);
 app.listen(port, function () {
   console.log(`Example app listening on port ${port}!`);
 });
