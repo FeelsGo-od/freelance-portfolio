@@ -18,6 +18,7 @@ app.use(express.static(__dirname + '/'));
 app.use('/images', express.static(path.join(__dirname + '/images')));
 app.use('/fonts', express.static(path.join(__dirname + '/fonts')));
 app.use('/css', express.static(path.join(__dirname + '/css')));
+app.use('/js', express.static(path.join(__dirname + '/js')));
 
 import bodyParser from 'body-parser';
 router.use(bodyParser.json());
