@@ -14,7 +14,7 @@ const port = process.env.PORT || 3000;
 
 app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
-app.use(express.static(__dirname + '/'));
+app.use(express.static(__dirname + ''));
 
 import bodyParser from 'body-parser';
 router.use(bodyParser.json());
