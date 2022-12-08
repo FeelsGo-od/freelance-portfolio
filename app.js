@@ -86,3 +86,5 @@ app.use('/', router);
 app.listen(port, function () {
   console.log(`Example app listening on port ${port}!`);
 });
+
+export { app };
