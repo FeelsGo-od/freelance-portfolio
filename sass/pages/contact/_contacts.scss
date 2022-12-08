@@ -1,0 +1,100 @@
+.contacts {
+    width: 70%;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 83px;
+
+    &_title {
+        font-family: 'Gilroy-SemiBold';
+        font-size: 20px;
+        line-height: 23px;
+        color: #1C1C1D;
+        font-weight: bold;
+        margin-top: 27px;
+    }
+
+    &_email {
+        margin-top: 62px;
+        margin-bottom: 85px;
+        position: relative;
+
+        @media(min-width: 769px) {
+            margin-top: 245px;
+            margin-bottom: 245px;
+        }
+    }
+
+    & ul {
+        margin: 0;
+        padding: 0;
+    }
+
+    & li {
+        font-family: 'Gilroy-Medium';
+        font-size: 16px;
+        line-height: 100%;
+        color: #313131;
+        margin-top: 20px;
+        cursor: pointer;
+    }
+
+    & form {
+        background: #F2F2F2;
+        border-radius: 4px;
+        width: 304px;
+        padding: 12px 12px 12px 0;
+        margin: 0 auto;
+        margin-top: 28px;
+        position: relative;
+
+        @media (max-width: 1024px) {
+            width: 226px;
+        }
+
+        @media (max-width: 392px) {
+            width: 193px;
+        }
+
+        & input:-webkit-autofill,
+        & input:-webkit-autofill:hover, 
+        & input:-webkit-autofill:focus, 
+        & input:-webkit-autofill:active{
+            -webkit-box-shadow: 0 0 0 30px #F2F2F2 inset !important;
+        }
+
+        & input {
+            background: none;
+            border: none;
+            outline: none;
+            width: 75%;
+            display: flex;
+            padding: 8px 0 8px 9px;
+
+            @media (max-width: 1024px) {
+                font-size: 16px;
+                padding: 4px 0 4px 9px;
+            }
+        }
+
+        & label {
+            cursor: pointer;
+            position: absolute;
+            right: 15px;
+            top: 0;
+            bottom: 0;
+            margin: auto 0;
+            display: flex;
+            align-items: center;
+        }
+
+        & button {
+            font-family: 'Inter';
+            padding: 3.5px 10px;
+            position: relative;
+            border: 1px solid rgb(234, 234, 234);
+            background: #F2F2F2;
+            color: #000;
+            border-radius: 1px;
+        }
+    }
+}

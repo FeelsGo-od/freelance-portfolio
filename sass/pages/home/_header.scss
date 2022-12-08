@@ -1,0 +1,209 @@
+.home {
+    & header {
+        background: #F2F2F2;
+        min-height: 100vh;
+    }
+
+    &_intro {
+        display: flex;
+        margin: 0 auto;
+        justify-content: space-between;
+        padding-top: 139px;
+        padding-bottom: 132px;
+        position: relative;
+
+        @media (max-width: 1178px) {
+            padding-bottom: 139px;
+        }
+
+        @media (min-width: 1716px) {
+            width: 74%;
+        }
+    }
+
+    &_projects {
+        &-right .vector {
+            @media (max-width: 1178px) {
+                display: none;
+            }
+        }
+
+        &-left .vector {
+            margin-left: 56px;
+            margin-top: 39px;
+            position: relative;
+            left: -12px;
+
+            @media (max-width: 1178px) {
+                display: none;
+            }
+        }
+    }
+
+    &_project {
+        position: absolute;
+        bottom: 0;
+        padding-bottom: 132px;
+        transition: transform 0.3s ease-in;
+
+        &:hover {
+            transform: scale(1.2);
+        }
+
+        @media (max-width: 1178px) {
+            display: none;
+        }
+
+        &-left-one {
+            top: 125px;
+            left: 0;
+            width: 155px;
+            height: 234px;
+        }
+
+        &-left-two {
+            left: 191px;
+            bottom: 99px;
+            width: 145.5px;
+            height: 204px;
+        }
+
+        &-left-three {
+            bottom: -67px;
+            left: 7px;
+            width: 155px;
+            height: 157px;
+        }
+
+        &-right-one {
+            right: 0;
+            top: 86px;
+            width: 155.4px;
+            height: 258.8px;
+        }
+
+        &-right-two {
+            bottom: 94px;
+            right: 116px;
+            width: 171px;
+            height: 236.7px;
+        }
+
+        &-right-three {
+            right: 0;
+            bottom: -89px;
+            width: 155.4px;
+            height: 158.7px;
+        }
+
+        & img {
+            object-fit: contain;
+        }
+    }
+
+    &_title {
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 800;
+        font-size: 78px;
+        line-height: 80px;
+        text-align: center;
+        letter-spacing: -0.05em;
+        color: #313131;
+        margin-bottom: 32px;
+
+        @media (max-width: 371px) {
+            font-size: 62px;
+        }
+
+        & span {
+            color: #49AD09;
+        }
+
+        & p {
+            margin: 0;
+        }
+    }
+
+    &_descr {
+        text-align: center;
+        font-family: 'Gilroy-Medium';
+        font-size: 18px;
+        line-height: 147.9%;
+        color: #514040;
+        width: 64%;
+        margin: 0 auto;
+
+        @media (max-width: 371px) {
+            font-size: 16px;
+        }
+
+        & a {
+            text-decoration: underline;
+            color: #000;
+        }
+    }
+
+    &_buttons {
+        margin-top: 38px;
+        text-align: center;
+
+        & button {
+            border: none;
+            color: #FFFFFF;
+            font-family: 'Gilroy-Medium';
+            font-size: 18px;
+            line-height: 21px;
+            transition: background 0.2s ease-out;
+        }
+
+        & .btn_green {
+            padding: 19px 63px;
+            margin-left: 6px;
+            margin-bottom: 38px;
+
+            @media (max-width: 393px) {
+                box-shadow: none;
+            }
+
+            &:hover {
+                background: #ebebeb;
+                color: #000;
+                box-shadow: none;
+            }
+        }
+    }
+
+    &_video {
+        text-decoration: underline;
+        margin-left: 27px;
+        background: none;
+
+        @media (max-width: 393px) {
+            margin-left: 18px;
+        }
+
+        & a {
+            color: #514040;
+        }
+
+        & span {
+            width: 9px;
+            height: 7px;
+            background: #514040;
+            transform: rotate(90deg);
+            margin-left: 13px;
+        }
+    }
+
+    &_arrow {
+        text-align: center;
+        cursor: pointer;
+        position: relative;
+        bottom: 36px;
+
+        &:hover {
+            filter: blur(0.8px);
+        }
+    }
+}

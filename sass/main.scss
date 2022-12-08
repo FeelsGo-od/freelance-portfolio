@@ -1,0 +1,95 @@
+// run "npm run compile-sass" to start watching sass changes
+
+@font-face {
+    font-family: 'Gilroy-SemiBold';
+    src: url('../fonts/Gilroy-Font/Gilroy-SemiBold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Gilroy-Medium';
+    src: url('../fonts/Gilroy-Font/Gilroy-Medium.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Gilroy-Bold';
+    src: url('../fonts/Gilroy-Font/Gilroy-Bold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url('../fonts/inter/Inter-SemiBold.otf') format('opentype');
+}
+
+@import './layout/nav';
+@import './layout/footer';
+
+@import './pages/home/header';
+@import './pages/home/specialization';
+@import './pages/home/portfolio';
+@import './pages/home/contact';
+
+@import './pages/about/about';
+@import './pages/projects/projects';
+@import './pages/contact/contacts';
+
+@import './components/form';
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    box-sizing: border-box;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+button {
+    cursor: pointer;
+}
+
+.btn_green {
+    padding: 20px 46px;
+    background: #49AD09;
+    box-shadow: 0px 100px 80px rgba(49, 49, 49, 0.1), 0px 64.8148px 46.8519px rgba(49, 49, 49, 0.0759259), 0px 38.5185px 25.4815px rgba(49, 49, 49, 0.0607407), 0px 20px 13px rgba(49, 49, 49, 0.05), 0px 8.14815px 6.51852px rgba(49, 49, 49, 0.0392593), 0px 1.85185px 3.14815px rgba(49, 49, 49, 0.0240741);
+    border-radius: 5px;
+    color: #fff;
+
+    & a {
+        color: #fff;
+    }
+}
+
+.title {
+    font-family: 'Gilroy-Medium';
+    font-size: 45px;
+    line-height: 53px;
+    color: #313131;
+    text-align: center;
+
+    @media (max-width: 420px) {
+        font-size: 38px;
+    }
+
+    @media (max-width: 334px) {
+        font-size: 32px;
+    }
+}
+
+.description {
+    font-family: 'Gilroy-Medium';
+    font-size: 18px;
+    line-height: 21px;
+    color: #514040;
+    text-align: center;
+    font-weight: lighter;
+}

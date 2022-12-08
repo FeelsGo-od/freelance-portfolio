@@ -1,0 +1,5 @@
+* sass/layout - styles which repeat on every page
+
+* sass/components - styles which can repeat(but not necessary)
+
+* sass/pages - certain styles of different pages

@@ -1,0 +1,29 @@
+.contact {
+    margin-top: 118px;
+    margin-bottom: 120px;
+
+    @media(min-width: 1025px) {
+        margin-top: 148px;
+        margin-bottom: 140px;
+    }
+    
+    & .button {
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    & .btn_green {
+        border: none;
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 15px;
+        line-height: 18px;
+        text-align: center;
+        color: #FEFFFE;
+        
+        @media (max-width: 1024px) {
+            box-shadow: none;
+        }
+    }
+}

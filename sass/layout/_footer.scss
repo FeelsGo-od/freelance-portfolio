@@ -1,0 +1,119 @@
+.footer {
+    width: 74%;
+    margin: 0 auto;
+
+    &_blocks {
+        display: grid;
+        padding-bottom: 77px;
+
+        @media (min-width: 1024px) {
+            grid-template-columns: 40% 20% 20% 20%;
+        }
+    }
+
+    &_block:last-child {
+        margin-top: 46px;
+    }
+
+    &_logo {
+        font-family: 'Gilroy-Bold';
+        font-size: 18px;
+        line-height: 21px;
+        color: #313131;
+    }
+
+    &_descr {
+        font-family: 'Gilroy-Medium';
+        font-size: 16px;
+        line-height: 100%;
+        color: #313131;
+    }
+
+    &_media-blocks {
+        @media (min-width: 1024px) {
+            margin-top: 64px;
+        }
+
+        & img {
+            background: #F2F2F2;
+            padding: 8px;
+            border-radius: 4px;
+            width: 28px;
+            height: 28px;
+            cursor: pointer;
+        }
+    }
+
+    &_title {
+        font-family: 'Gilroy-SemiBold';
+        font-size: 20px;
+        line-height: 23px;
+        color: #1C1C1D;
+        font-weight: bold;
+    }
+
+    & ul {
+        margin: 0;
+        padding: 0;
+    }
+
+    & li {
+        font-family: 'Gilroy-Medium';
+        font-size: 16px;
+        line-height: 100%;
+        color: #313131;
+        margin-top: 20px;
+        cursor: pointer;
+    }
+
+    & a {
+        color: #313131;
+    }
+
+    & form {
+        background: #F2F2F2;
+        border-radius: 4px;
+        width: 174px;
+        padding: 12px;
+        position: relative;
+
+        @media (max-width: 1024px) {
+            width: 256px;
+        }
+
+        @media (max-width: 392px) {
+            width: 193px;
+        }
+
+        & input {
+            background: none;
+            border: none;
+            outline: none;
+            
+            @media (max-width: 1024px) {
+                font-size: 16px;
+            }
+        }
+
+        & label {
+            cursor: pointer;
+            position: absolute;
+            right: 15px;
+            top: 0;
+            bottom: 0;
+            margin: auto 0;
+            display: flex;
+            align-items: center;
+        }
+    }
+
+    &_copyright {
+        text-align: center;
+        font-family: 'Gilroy-Medium';
+        font-size: 16px;
+        line-height: 100%;
+        color: #313131;
+        padding: 40px 0;
+        border-top: 1px solid #EDEDED;
+    }
+}

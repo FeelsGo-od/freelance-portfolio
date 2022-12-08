@@ -1,0 +1,22 @@
+.projects {
+    &_header {
+        min-height: auto !important;
+    }
+
+    &_nav {
+        padding: 32px 0;
+    }
+
+    &_portfolio {
+        padding-top: 72px;
+        padding-bottom: 65px;
+
+        @media (max-width: 1235px) {
+            padding-bottom: 46px;
+        }
+
+        @media (max-width: 769px) {
+            padding-bottom: 0px;
+        }
+    }
+}

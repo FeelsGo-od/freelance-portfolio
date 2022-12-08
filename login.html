@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="wrapper home projects">
+        <header class="projects_header">
+            <img class="nav_decore" src="./images/nav_decore.png" alt="header decoration">
+            <nav class="nav projects_nav">
+                <p class="nav_logo">Andrewdev</p>
+                <img class="nav_hamb" src="./images/menu.svg" alt="open menu">
+                <ul class="nav_menu">
+                    <div class="nav_close">x</div>
+                    <li><a class="nav_link" href="/">Home</a></li>
+                    <li><a class="nav_link" href="/about.html">About</a></li>
+                    <li><a class="nav_link" href="/projects.html">Projects</a></li>
+                    <li><a class="nav_link" href="/contact.html">Contact</a></li>
+                    <li><a class="nav_link" href="/login.html">Sign in</a></li>
+                        <li><a class="nav_link btn_green" href="/reg.html">Sign up</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <div class="form">
+            <div class="form_title">Write your Email and Login here.</div>
+            <form action="">
+                <div class="form_element">
+                    <input class="form_input" type="text" autocomplete="off" name="Email" placeholder="Enter your email">
+                </div>
+                <div class="form_element">
+                    <input class="form_input" type="password" autocomplete="new-password" name="password" placeholder="Enter your password">
+                </div>
+                <button class="form_submit" type="submit">Submit</button>
+            </form>
+            <div class="form_description">You can write me direct message after registration, or just <a href="/contact.html">leave email</a> and I will write to you*</div>
+        </div>
+
+        <footer class="footer">
+            <div class="footer_blocks">
+                <div class="footer_block">
+                    <p class="footer_logo">Andrewdev</p>
+                    <p class="footer_descr">I will find solution to your problems with your website</p>
+
+                    <div class="footer_media-blocks">
+                        <img src="./images/fb.svg" alt="my facebook link">
+                        <img src="./images/twitter.svg" alt="my twitter link">
+                        <img src="./images/in.svg" alt="my linkedin link">
+                    </div>
+                </div>
+                <div class="footer_block">
+                    <p class="footer_title">Resources</p>
+                    <ul>
+                        <li>Services</li>
+                        <li><a href="/about.html">About me</a></li>
+                        <li><a href="/contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer_block">
+                    <p class="footer_title">Messenger</p>
+                    <ul>
+                        <li><a href="/login.html">Sign in</a></li>
+                        <li><a href="/reg.html">Sign up</a></li>
+                    </ul>
+                </div>
+                <div class="footer_block">
+                    <p class="footer_title">Get in touch in 5 seconds</p>
+                    <form action="">
+                        <input id="email" type="text" name="email" placeholder="Enter your email">
+                        <label for="email">></label>
+                    </form>
+                </div>
+            </div>
+            <div class="footer_copyright">
+                <p>Copyright 2022 ©Web.Dev design, site developed by ©Andrewdev All rights reserved.</p>
+            </div>
+        </footer>
+    </div>
+
+    <script type="module" src="./js/imports.js"></script>
+</body>
+
+</html>
