@@ -15,7 +15,9 @@ const port = process.env.PORT || 3000;
 app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
 app.use(express.static(__dirname + '/'));
-app.use('/static', express.static(path.join(__dirname)));
+app.use('/images', express.static(path.join(__dirname + '/images')));
+app.use('/fonts', express.static(path.join(__dirname + '/fonts')));
+app.use('/css', express.static(path.join(__dirname + '/css')));
 
 import bodyParser from 'body-parser';
 router.use(bodyParser.json());
