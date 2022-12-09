@@ -84,6 +84,8 @@ router.post('/contact_success', function (req, res) {
     console.log(err);
     return res.send('Error uploading file');
   }
+
+  res.sendFile(path.join(__dirname, '/contact_success'));
 });
 
 app.use('/', router);
