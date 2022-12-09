@@ -73,7 +73,6 @@ router.post('/contact', function (req, res) {
         console.log('Error ' + err);
       } else {
         console.log('Email sent successfully');
-        res.sendFile(path.join(__dirname, '/contact_success'));
       }
     });
   } catch (err) {
