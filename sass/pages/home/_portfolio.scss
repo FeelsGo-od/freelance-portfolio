@@ -69,6 +69,8 @@
         background: #fcfbfb;
         border: none;
         margin-left: 11px;
+        display: flex;
+        align-items: center;
 
         @media (min-width: 769px) {
             padding: 0;
