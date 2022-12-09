@@ -44,44 +44,52 @@ router.get('/contact', (req, res) => {
   res.sendFile(path.join(__dirname, '/contact.html'));
 });
 
-router.post('/contact', function (req, res) {
-  try {
-    const recipient = req.body.email;
-    console.log('recipient:', recipient);
+router.post(
+  '/contact',
+  function (req, res, next) {
+    try {
+      const recipient = req.body.email;
+      console.log('recipient:', recipient);
 
-    let transporter = nodemailer.createTransport({
-      service: 'gmail',
-      auth: {
-        type: 'OAuth2',
-        user: process.env.MAIL_USERNAME,
-        pass: process.env.MAIL_PASSWORD,
-        clientId: process.env.OAUTH_CLIENTID,
-        clientSecret: process.env.OAUTH_CLIENT_SECRET,
-        refreshToken: process.env.OAUTH_REFRESH_TOKEN,
-      },
-    });
+      let transporter = nodemailer.createTransport({
+        service: 'gmail',
+        auth: {
+          type: 'OAuth2',
+          user: process.env.MAIL_USERNAME,
+          pass: process.env.MAIL_PASSWORD,
+          clientId: process.env.OAUTH_CLIENTID,
+          clientSecret: process.env.OAUTH_CLIENT_SECRET,
+          refreshToken: process.env.OAUTH_REFRESH_TOKEN,
+        },
+      });
 
-    let mailOptions = {
-      from: 'andrewdevvv@gmail.com',
-      to: 'andrew.sokolowsky@gmail.com',
-      subject: `Message from ${recipient}`,
-      text: 'Hi there, I want to get in touch with you :)',
-    };
+      let mailOptions = {
+        from: 'andrewdevvv@gmail.com',
+        to: 'andrew.sokolowsky@gmail.com',
+        subject: `Message from ${recipient}`,
+        text: 'Hi there, I want to get in touch with you :)',
+      };
 
-    transporter.sendMail(mailOptions, function (err, data) {
-      if (err) {
-        console.log('Error ' + err);
-      } else {
-        console.log('Email sent successfully');
-      }
-    });
-  } catch (err) {
-    console.log(err);
-    return res.send('Error uploading file');
+      transporter.sendMail(mailOptions, function (err, data) {
+        if (err) {
+          console.log('Error ' + err);
+        } else {
+          console.log('Email sent successfully');
+          next();
+          res.sendFile(path.join(__dirname, '/contact_success'));
+        }
+      });
+    } catch (err) {
+      console.log(err);
+      return res.send('Error uploading file');
+    }
+  },
+  function (req, res, next) {
+    res.sendFile(path.join(__dirname, '/contact_success'));
   }
-});
+);
 
-router.get('/contact/contact_success', (req, res) => {
+router.get('contact_success', (req, res) => {
   res.sendFile(path.join(__dirname, '/contact_success.html'));
 });
 
