@@ -48,7 +48,7 @@ router.get('/contact_success', (req, res) => {
   res.sendFile(path.join(__dirname, '/contact_success.html'));
 });
 
-router.post('/contact_success', function (req, res) {
+router.post('/contact/contact_success', function (req, res) {
   try {
     const recipient = req.body.email;
     console.log('recipient:', recipient);
