@@ -44,10 +44,6 @@ router.get('/contact', (req, res) => {
   res.sendFile(path.join(__dirname, '/contact.html'));
 });
 
-router.get('/contact_success', (req, res) => {
-  res.sendFile(path.join(__dirname, '/contact_success.html'));
-});
-
 router.post('/contact/contact_success', function (req, res) {
   try {
     const recipient = req.body.email;
@@ -84,6 +80,10 @@ router.post('/contact/contact_success', function (req, res) {
     console.log(err);
     return res.send('Error uploading file');
   }
+});
+
+router.get('/contact/contact_success', (req, res) => {
+  res.sendFile(path.join(__dirname, '/contact_success.html'));
 });
 
 app.use('/', router);
