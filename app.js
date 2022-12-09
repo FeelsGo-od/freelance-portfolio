@@ -85,7 +85,7 @@ router.post(
     }
   },
   function (req, res, next) {
-    res.sendFile(path.join(__dirname, '/contact_success'));
+    res.sendFile(path.join(__dirname, '/contact_success.html'));
   }
 );
 
