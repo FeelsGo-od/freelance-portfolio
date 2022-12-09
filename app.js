@@ -97,10 +97,6 @@ router.get('/project1', (req, res) => {
   res.sendFile(path.join(__dirname, '/projects_layouts/project1.html'));
 });
 
-router.get('/GrowBe', (req, res) => {
-  res.sendFile(path.join(__dirname, '/portfolio-projects/GrowBe/index.html'));
-});
-
 app.use('/', router);
 app.listen(port, function () {
   console.log(`Example app listening on port ${port}!`);
