@@ -93,6 +93,10 @@ router.get('contact_success', (req, res) => {
   res.sendFile(path.join(__dirname, '/contact_success.html'));
 });
 
+router.get('/project1', (req, res) => {
+  res.sendFile(path.join(__dirname, '/projects_layouts/project1.html'));
+});
+
 app.use('/', router);
 app.listen(port, function () {
   console.log(`Example app listening on port ${port}!`);
