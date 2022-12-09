@@ -40,6 +40,10 @@ router.get('/projects', (req, res) => {
   res.sendFile(path.join(__dirname, '/projects.html'));
 });
 
+router.get('/contact', (req, res) => {
+  res.sendFile(path.join(__dirname, '/contact.html'));
+});
+
 router.post(
   '/contact',
   function (req, res, next) {
@@ -72,7 +76,7 @@ router.post(
         } else {
           console.log('Email sent successfully');
           next();
-          res.sendFile(path.join(__dirname, '/contact_success'));
+          res.sendFile(path.join(__dirname, '/contact_success.html'));
         }
       });
     } catch (err) {
@@ -84,10 +88,6 @@ router.post(
     res.sendFile(path.join(__dirname, '/contact_success'));
   }
 );
-
-router.get('/contact', (req, res) => {
-  res.sendFile(path.join(__dirname, '/contact.html'));
-});
 
 router.get('contact_success', (req, res) => {
   res.sendFile(path.join(__dirname, '/contact_success.html'));
