@@ -44,7 +44,7 @@ router.get('/contact', (req, res) => {
   res.sendFile(path.join(__dirname, '/contact.html'));
 });
 
-router.post('/contact/contact_success', function (req, res) {
+router.post('/contact', function (req, res) {
   try {
     const recipient = req.body.email;
     console.log('recipient:', recipient);
@@ -73,7 +73,7 @@ router.post('/contact/contact_success', function (req, res) {
         console.log('Error ' + err);
       } else {
         console.log('Email sent successfully');
-        res.sendFile(path.join(__dirname, '/contact'));
+        res.sendFile(path.join(__dirname, '/contact_success'));
       }
     });
   } catch (err) {
