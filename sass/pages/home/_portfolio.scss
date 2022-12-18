@@ -45,7 +45,7 @@
 
     &_details {
         display: flex;
-        justify-content: space-between;
+        flex-direction: column;
     }
 
     &_name {
@@ -68,9 +68,9 @@
         text-align: center;
         background: #fcfbfb;
         border: none;
-        margin-left: 11px;
         display: flex;
         align-items: center;
+        padding: 14px;
 
         @media (min-width: 769px) {
             padding: 0;
@@ -92,11 +92,11 @@
             box-shadow: none;
 
             @media (min-width: 769px) {
-                margin-top: 66px;
+                margin-top: 155px;
             }
 
             @media (min-width: 2000px) {
-                margin-top: 112px;
+                margin-top: 195px;
             }
         }
     }
