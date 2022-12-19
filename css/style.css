@@ -414,7 +414,8 @@
     align-items: center; }
     .specialization_title img {
       width: 28px;
-      display: inline; }
+      display: inline;
+      filter: blur(0.2px); }
     .specialization_title p {
       margin-left: 15px;
       font-family: 'Gilroy-SemiBold';
@@ -423,7 +424,7 @@
       color: #313131; }
   .specialization_text {
     font-family: 'Gilroy-Medium';
-    font-size: 16.6px;
+    font-size: 16.9px;
     line-height: 100%; }
   .specialization_link {
     text-decoration: underline;
