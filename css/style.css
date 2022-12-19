@@ -30,6 +30,9 @@
     top: -1px; }
     .nav_logo a {
       color: #313131; }
+      @media (min-width: 1178px) {
+        .nav_logo a {
+          font-size: 21px; } }
   .nav_menu {
     display: flex; }
     @media (max-width: 1024px) {
@@ -339,7 +342,7 @@
     font-family: 'Gilroy-Medium';
     font-size: 18px;
     line-height: 21px;
-    transition: background 0.2s ease-out; }
+    transition: background 0.2s ease-out, box-shadow 0.2s ease; }
   .home_buttons .btn_green {
     padding: 19px 63px;
     margin-left: 6px;
@@ -348,8 +351,8 @@
       .home_buttons .btn_green {
         box-shadow: none; } }
     .home_buttons .btn_green:hover {
-      background: #ebebeb;
-      color: #000;
+      background: #212121;
+      color: #f2f2f2;
       box-shadow: none; }
 
 .home_video {
@@ -418,8 +421,13 @@
       font-size: 22px;
       line-height: 147.9%;
       color: #313131; }
+  .specialization_text {
+    font-family: 'Gilroy-Medium';
+    font-size: 16.6px;
+    line-height: 100%; }
   .specialization_link {
     text-decoration: underline;
+    font-family: 'Gilroy-SemiBold';
     cursor: pointer; }
   .specialization .button {
     text-align: center; }
