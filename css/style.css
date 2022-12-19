@@ -429,7 +429,8 @@
   .specialization_link {
     text-decoration: underline;
     font-family: 'Gilroy-SemiBold';
-    cursor: pointer; }
+    cursor: pointer;
+    color: #313131; }
   .specialization .button {
     text-align: center; }
   .specialization .btn_green {
