@@ -15,12 +15,14 @@ export default function emailForm() {
 
     let api = new XMLHttpRequest();
     api.open('GET', url, true);
-    api.send();
+    if (email !== '') {
+      api.send();
 
-    window.location.href =
-      window.location.protocol +
-      '//' +
-      window.location.host +
-      '/contact_success.html';
+      window.location.href =
+        window.location.protocol +
+        '//' +
+        window.location.host +
+        '/contact_success.html';
+    }
   });
 }
