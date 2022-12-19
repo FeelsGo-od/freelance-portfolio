@@ -93,11 +93,11 @@ router.get('contact_success', (req, res) => {
   res.sendFile(path.join(__dirname, '/contact_success.html'));
 });
 
-router.get('/project:id', (req, res) => {
-  res.sendFile(
-    path.join(__dirname, `/projects_layouts/project${req.params.id}.html`)
-  );
-});
+// router.get('/project-:id', (req, res) => {
+//   res.sendFile(
+//     path.join(__dirname, `/projects_layouts/project${req.params.id}.html`)
+//   );
+// });
 
 app.use('/', router);
 app.listen(port, function () {
