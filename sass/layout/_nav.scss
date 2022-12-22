@@ -77,6 +77,8 @@
 
     &_menu li:first-child {
         margin-left: 0;
+        position: absolute;
+        top: 0;
     }
 
     &_menu li:last-child {
