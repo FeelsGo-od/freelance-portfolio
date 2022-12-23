@@ -10,7 +10,7 @@ import express from 'express';
 import nodemailer from 'nodemailer';
 const app = express();
 const router = express.Router();
-const port = process.env.PORT || 3000;
+const port = process.env.PORT || 8000;
 
 app.use(express.urlencoded({ extended: false }));
 app.use(express.json());

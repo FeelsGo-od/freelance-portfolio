@@ -315,10 +315,6 @@
   @media (max-width: 371px) {
     .home_title {
       font-size: 62px; } }
-  .home_title span {
-    color: #49AD09; }
-  .home_title p {
-    margin: 0; }
 
 .home_descr {
   text-align: center;

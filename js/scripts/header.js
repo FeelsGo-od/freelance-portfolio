@@ -2,8 +2,10 @@ let mobileMenu = document.querySelector('.nav_menu');
 let openBtn = document.querySelector('.nav_hamb');
 let closeBtn = document.querySelector('.nav_close');
 let linkToProjects = document.querySelector('.home_proj-link');
+let headerTitle = document.querySelector('.home_title');
 
 export default function header() {
+  // Open Navigation
   openBtn.addEventListener('click', () => {
     mobileMenu.style.display = 'block';
     mobileMenu.style.transform = 'translateX(0)';
@@ -19,4 +21,8 @@ export default function header() {
     if (!linkToProjects) return;
     linkToProjects.innerHTML = '<a href="#portfolio">at the bottom</a>';
   }
+
+  // Header Title Color
+  headerTitle.querySelector('em').style.color = '#49AD09';
+  headerTitle.querySelector('em').style.fontStyle = 'normal';
 }
