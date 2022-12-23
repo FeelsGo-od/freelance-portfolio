@@ -2,11 +2,11 @@ let openBtn = document.querySelectorAll('.portfolio-btn');
 
 export default function portfolioPopup() {
   for (let i = 0; i < openBtn.length; i++) {
-    openBtn[i].addEventListener('click', () => {
+    openBtn[i].addEventListener('click', (e) => {
+      e.preventDefault();
+
       let popup =
-        openBtn[i].parentElement.previousElementSibling.querySelector(
-          '.portfolio_popup'
-        );
+        openBtn[i].parentElement.previousElementSibling.previousElementSibling;
 
       popup ||=
         openBtn[i].parentElement.parentElement.parentElement.querySelector(
