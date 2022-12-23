@@ -714,7 +714,9 @@
     padding: 12px 12px 12px 0;
     margin: 0 auto;
     margin-top: 28px;
-    position: relative; }
+    position: relative;
+    display: flex;
+    justify-content: space-between; }
     @media (max-width: 1024px) {
       .contacts form {
         width: 226px; } }
@@ -740,12 +742,14 @@
     .contacts form label {
       cursor: pointer;
       position: absolute;
-      right: 15px;
       top: 0;
       bottom: 0;
-      margin: auto 0;
       display: flex;
-      align-items: center; }
+      align-items: center;
+      width: 100%;
+      right: 0;
+      display: flex;
+      justify-content: center; }
     .contacts form button {
       font-family: 'Inter';
       padding: 3.5px 10px;
