@@ -126,8 +126,9 @@
 
     & .button {
         text-align: center;
+        margin-top: 69px;
 
-        & button {
+        & button, & a {
             border: none;
             margin-top: 24px;
             font-family: 'Gilroy-Medium';
