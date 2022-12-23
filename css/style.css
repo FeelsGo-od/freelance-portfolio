@@ -47,7 +47,7 @@
         padding: 88px 40px 88px 141px;
         transform: translateX(990px);
         display: none;
-        transition: transform 0.3s ease-in, block 0.02s ease;
+        transition: transform 0.3s ease-in;
         z-index: 9999; } }
     @media (max-width: 689px) {
       .nav_menu {
@@ -383,7 +383,6 @@
       padding-top: 140px; } }
   .specialization_blocks {
     display: grid;
-    grid-template-columns: repeat(1fr, 1fr);
     margin: 0 auto;
     width: 62%;
     row-gap: 3%;
@@ -723,11 +722,6 @@
     @media (max-width: 392px) {
       .contacts form {
         width: 193px; } }
-    .contacts form input:-webkit-autofill,
-    .contacts form input:-webkit-autofill:hover,
-    .contacts form input:-webkit-autofill:focus,
-    .contacts form input:-webkit-autofill:active {
-      -webkit-box-shadow: 0 0 0 30px #F2F2F2 inset !important; }
     .contacts form input {
       background: none;
       border: none;
