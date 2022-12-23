@@ -115,14 +115,6 @@
         @media (max-width: 371px) {
             font-size: 62px;
         }
-
-        // & span {
-        //     color: #49AD09;
-        // }
-
-        // & p {
-        //     margin: 0;
-        // }
     }
 
     &_descr {
@@ -148,16 +140,13 @@
         margin-top: 38px;
         text-align: center;
 
-        & button {
+        & .btn_green {
             border: none;
             color: #FFFFFF;
             font-family: 'Gilroy-Medium';
             font-size: 18px;
             line-height: 21px;
-            transition: background 0.2s ease-out, box-shadow 0.2s ease;
-        }
-
-        & .btn_green {
+            transition: background 0.24s ease-out, box-shadow 0.42s ease;
             padding: 19px 63px;
             margin-left: 6px;
             margin-bottom: 38px;

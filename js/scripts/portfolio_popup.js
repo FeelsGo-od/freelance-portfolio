@@ -4,9 +4,7 @@ export default function portfolioPopup() {
   for (let i = 0; i < openBtn.length; i++) {
     openBtn[i].addEventListener('click', () => {
       let popup =
-        openBtn[
-          i
-        ].parentElement.parentElement.previousElementSibling.querySelector(
+        openBtn[i].parentElement.previousElementSibling.querySelector(
           '.portfolio_popup'
         );
 

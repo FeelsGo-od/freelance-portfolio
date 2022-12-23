@@ -23,6 +23,8 @@ export default function header() {
   }
 
   // Header Title Color
-  headerTitle.querySelector('em').style.color = '#49AD09';
-  headerTitle.querySelector('em').style.fontStyle = 'normal';
+  if (headerTitle) {
+    headerTitle.querySelector('em').style.color = '#49AD09';
+    headerTitle.querySelector('em').style.fontStyle = 'normal';
+  }
 }

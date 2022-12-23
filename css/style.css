@@ -334,14 +334,13 @@
 .home_buttons {
   margin-top: 38px;
   text-align: center; }
-  .home_buttons button {
+  .home_buttons .btn_green {
     border: none;
     color: #FFFFFF;
     font-family: 'Gilroy-Medium';
     font-size: 18px;
     line-height: 21px;
-    transition: background 0.2s ease-out, box-shadow 0.2s ease; }
-  .home_buttons .btn_green {
+    transition: background 0.24s ease-out, box-shadow 0.42s ease;
     padding: 19px 63px;
     margin-left: 6px;
     margin-bottom: 38px; }
@@ -438,7 +437,11 @@
     color: #FFFFFF;
     padding: 18px 66px;
     border: none;
-    box-shadow: 0px 30px 80px rgba(49, 49, 49, 0.1), 0px 64.8148px 46.8519px rgba(49, 49, 49, 0.0759259), 0px 38.5185px 25.4815px rgba(49, 49, 49, 0.0607407), 0px 20px 13px rgba(49, 49, 49, 0.05), 0px 8.14815px 6.51852px rgba(49, 49, 49, 0.0392593), 0px 1.85185px 3.14815px rgba(49, 49, 49, 0.0240741); }
+    box-shadow: 0px 30px 80px rgba(49, 49, 49, 0.1), 0px 64.8148px 46.8519px rgba(49, 49, 49, 0.0759259), 0px 38.5185px 25.4815px rgba(49, 49, 49, 0.0607407), 0px 20px 13px rgba(49, 49, 49, 0.05), 0px 8.14815px 6.51852px rgba(49, 49, 49, 0.0392593), 0px 1.85185px 3.14815px rgba(49, 49, 49, 0.0240741);
+    transition: background 0.2s ease-in-out; }
+    .specialization .btn_green:hover {
+      background: none;
+      background: #000; }
 
 .portfolio {
   padding-top: 80px; }
@@ -524,7 +527,8 @@
     border: none;
     display: flex;
     align-items: center;
-    padding: 14px; }
+    padding: 14px;
+    cursor: pointer; }
     @media (min-width: 769px) {
       .portfolio_btn, .portfolio_link {
         padding: 0;
