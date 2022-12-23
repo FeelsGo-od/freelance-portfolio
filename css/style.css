@@ -616,7 +616,8 @@
         margin-right: 0;
         width: 100%; } }
     .about-me_text .button {
-      display: none; }
+      display: none;
+      margin-top: 42px; }
       @media (max-width: 1024px) {
         .about-me_text .button {
           display: block; } }
