@@ -263,7 +263,9 @@
   position: absolute;
   bottom: 0;
   padding-bottom: 132px;
-  transition: transform 0.3s ease-in; }
+  transition: transform 0.3s ease-in;
+  font-family: 'Gilroy-Bold';
+  color: #070707; }
   .home_project:hover {
     transform: scale(1.2); }
   @media (max-width: 1178px) {
@@ -315,6 +317,9 @@
   @media (max-width: 371px) {
     .home_title {
       font-size: 62px; } }
+  .home_title em {
+    color: #49AD09;
+    font-style: normal; }
 
 .home_descr {
   text-align: center;
@@ -457,8 +462,8 @@
     @media (min-width: 769px) {
       .portfolio_blocks {
         grid-template-columns: 48% 48%;
-        row-gap: 0;
-        gap: 4%; } }
+        gap: 4%;
+        row-gap: 5%; } }
     @media (min-width: 1025px) {
       .portfolio_blocks {
         padding-top: 80px; } }
@@ -511,10 +516,13 @@
     font-family: 'Gilroy-Medium';
     font-size: 28px;
     line-height: 33px;
-    color: #000000; }
+    color: #000000;
+    margin-bottom: 2px; }
     @media (max-width: 350px) {
       .portfolio_name {
         font-size: 23px; } }
+    .portfolio_name b {
+      font-family: 'Gilroy-SemiBold'; }
   .portfolio_btn, .portfolio_link {
     font-family: 'Gilroy-Medium';
     font-size: 18px;
@@ -535,7 +543,7 @@
         text-decoration: underline; } }
   .portfolio .button {
     text-align: center;
-    margin-top: 69px; }
+    margin-top: 112px; }
     .portfolio .button button, .portfolio .button a {
       border: none;
       margin-top: 24px;

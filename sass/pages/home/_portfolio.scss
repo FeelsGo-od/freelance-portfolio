@@ -17,8 +17,8 @@
 
         @media (min-width: 769px) {
             grid-template-columns: 48% 48%;
-            row-gap: 0;
             gap: 4%;
+            row-gap: 5%;
         }
 
         @media (min-width: 1025px) {
@@ -97,9 +97,14 @@
         font-size: 28px;
         line-height: 33px;
         color: #000000;
+        margin-bottom: 2px;
 
         @media (max-width: 350px) {
             font-size: 23px;
+        }
+        
+        & b {
+            font-family: 'Gilroy-SemiBold';
         }
     }
 
@@ -126,7 +131,7 @@
 
     & .button {
         text-align: center;
-        margin-top: 69px;
+        margin-top: 112px;
 
         & button, & a {
             border: none;

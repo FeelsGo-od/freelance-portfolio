@@ -45,6 +45,8 @@
         bottom: 0;
         padding-bottom: 132px;
         transition: transform 0.3s ease-in;
+        font-family: 'Gilroy-Bold';
+        color: #070707;
 
         &:hover {
             transform: scale(1.2);
@@ -114,6 +116,10 @@
 
         @media (max-width: 371px) {
             font-size: 62px;
+        }
+        & em {
+            color: #49AD09;
+            font-style: normal;
         }
     }
 

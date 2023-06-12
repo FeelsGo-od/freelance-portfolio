@@ -9,6 +9,12 @@ export default function header() {
   openBtn.addEventListener('click', () => {
     mobileMenu.style.display = 'block';
     mobileMenu.style.transform = 'translateX(0)';
+    mobileMenu.style.width = '89%'
+    mobileMenu.style.height = '100%'
+    mobileMenu.style.position = 'fixed'
+    for(const [key, value] of Object.entries(mobileMenu.getElementsByTagName('li'))) {
+      mobileMenu.getElementsByTagName('li')[key].style.paddingLeft = '30px'
+    }
   });
 
   closeBtn.addEventListener('click', () => {
@@ -20,11 +26,5 @@ export default function header() {
   if (mediaQuery.matches) {
     if (!linkToProjects) return;
     linkToProjects.innerHTML = '<a href="#portfolio">at the bottom</a>';
-  }
-
-  // Header Title Color
-  if (headerTitle) {
-    headerTitle.querySelector('em').style.color = '#49AD09';
-    headerTitle.querySelector('em').style.fontStyle = 'normal';
   }
 }
