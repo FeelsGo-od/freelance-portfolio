@@ -36,12 +36,6 @@
         }
     }
 
-    &_block:nth-child(2n) {
-        @media (min-width: 769px) {
-            margin-top: 70px;
-        }
-    }
-
     &_popup {
         opacity: 0;
         position: absolute;
@@ -105,6 +99,17 @@
         
         & b {
             font-family: 'Gilroy-SemiBold';
+        }
+    }
+
+    &_tech {
+        @media (min-width: 1025px) {
+            position: absolute;
+            top: -10px;
+            background: #fff;
+            padding: 12px 10px 10px 10px;
+            opacity: 0.8;
+            letter-spacing: 1.5px;
         }
     }
 
