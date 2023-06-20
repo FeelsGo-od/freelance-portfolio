@@ -468,7 +468,11 @@
       .portfolio_blocks {
         padding-top: 80px; } }
   .portfolio_block {
-    position: relative; }
+    position: relative;
+    transition: filter 0.3s ease-in-out; }
+    .portfolio_block:hover {
+      filter: drop-shadow(10px 10px 10px rgba(134, 134, 134, 0.113));
+      transition: filter 0.5s ease-in-out; }
   @media (max-width: 769px) {
     .portfolio_block:not(.portfolio_block:first-child) {
       margin-top: 80px; } }
@@ -528,6 +532,10 @@
       padding: 12px 10px 10px 10px;
       opacity: 0.8;
       letter-spacing: 1.5px; } }
+  @media (max-width: 1025px) {
+    .portfolio_tech {
+      font-size: 18px;
+      margin-bottom: 0; } }
   .portfolio_btn, .portfolio_link {
     font-family: 'Gilroy-Medium';
     font-size: 18px;

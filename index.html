@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>Andrewdev Website</title>
+        <title>Andrei Sokolovsky - Portfolio</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href="css/style.css" rel="stylesheet">
@@ -29,9 +29,9 @@
                 <div class="home_intro">
                     <div class="home_projects-left">
                         <img class="vector" src="./images/projects-left.png" alt="projects vector">
-                        <a href="/1" class="home_project-left-one home_project">Next.js, Tailwind, Context app<img src="./images/project-left-one.jpg" alt="my project"></a>
-                        <a href="/2" class="home_project-left-two home_project">Fullstack - MERN App, Cloudinary API<img src="./images/project-left-two.jpg" alt="my project"></a>
-                        <a href="/3" class="home_project-left-three home_project">HTML, CSS, VanillaJs - Landing<img src="./images/project-left-three.jpg" alt="my project"></a>
+                        <a href="https://remindemy-react.vercel.app/" target="_blank" rel="noopener noreferrer nofollow" class="home_project-left-one home_project">Fullstack - MERN App, Cloudinary API<img src="./images/project-left-one.jpg" alt="my project"></a>
+                        <a href="https://entertainmentwebapp.vercel.app/main" target="_blank" rel="noopener noreferrer nofollow" class="home_project-left-two home_project">Nextjs 13, React Testing Library, Style Components<img src="./images/project-left-two.jpg" alt="my project"></a>
+                        <a href="/3" class="home_project-left-three home_project">(In development:)<img src="./images/project-left-three.jpg" alt="my project"></a>
                     </div>
                     <div class="home_text">
                         <h1 class="home_title">Hi, I am Andrei <br> <em>How are you?</em></h1>
@@ -42,9 +42,9 @@
                     </div>
                     <div class="home_projects-right">
                         <img class="vector" src="./images/projects-right.png" alt="projects vector">
-                        <a target="_blank" rel="noopener noreferrer nofollow" href="https://dictionarywebapp-kappa.vercel.app/" class="home_project-right-one home_project">Next.js, Tailwind, Context - app<img src="./images/project-right-one.jpg" alt="my project"></a>
+                        <a target="_blank" rel="noopener noreferrer nofollow" href="https://dictionarywebapp-kappa.vercel.app/" class="home_project-right-one home_project">Next.js 13, Tailwind, Context - app<img src="./images/project-right-one.jpg" alt="my project"></a>
                         <a target="_blank" rel="noopener noreferrer nofollow" href="https://allbirds-landing.vercel.app/" class="home_project-right-two home_project">HTML, CSS, Vanilla JS - landing<img src="./images/project-right-two.jpg" alt="my project"></a>
-                        <a href="/6" class="home_project-right-three home_project">6<img src="./images/project-right-three.jpg" alt="my project"></a>
+                        <a href="/6" class="home_project-right-three home_project">(In Development:)<img src="./images/project-right-three.jpg" alt="my project"></a>
                     </div>
                 </div>
 
@@ -55,36 +55,44 @@
                 <!-- <p class="description">My Work</p> -->
                 <h2 class="title">My Projects</h2>
                 <div class="portfolio_blocks">
+                    <div class="portfolio_block" id="project-remindemy">
+                        <p class="portfolio_name portfolio_tech">Mongo-db Atlas, Express, React, Nodejs, Cloudinary Rest API</p><br>
+                        <a href="https://remindemy-react.vercel.app/" class="portfolio_link portfolio_btn portfolio-btn portfolio_popup-link" target="_blank" rel="noopener noreferrer nofollow"><img src="./images/r-portfolio4.png" alt="Remindemy project image"></a>
+                        <div class="portfolio_details">
+                            <p class="portfolio_name">
+                                * <b>Remindemy</b> - MERN Fullstack project with Cloudinary API. <em>testaccount@gmail.com Testaccount$1</em> <br>
+                            </p>
+                            <a href="https://remindemy-react.vercel.app/" class="portfolio_link portfolio_btn portfolio-btn portfolio_popup-link" target="_blank" rel="noopener noreferrer nofollow">Open website</a>
+                        </div>
+                    </div>
+                    <div class="portfolio_block" id="project-entertainment">
+                        <p class="portfolio_name portfolio_tech">Nextjs 13, React Testing Library, Style Components</p><br>
+                        <a href="https://entertainmentwebapp.vercel.app/main" class="portfolio_link portfolio_btn portfolio-btn portfolio_popup-link" target="_blank" rel="noopener noreferrer nofollow"><img src="./images/r-portfolio3.png" alt="Entertainment project image"></a>
+                        <div class="portfolio_details">
+                            <p class="portfolio_name">
+                                * <b>Entertainment</b> - Latest next.js version <br>
+                            </p>
+                            <a href="https://entertainmentwebapp.vercel.app/main" class="portfolio_link portfolio_btn portfolio-btn portfolio_popup-link" target="_blank" rel="noopener noreferrer nofollow">Open website</a>
+                        </div>
+                    </div>
+                    <div class="portfolio_block">
+                        <p class="portfolio_name portfolio_tech">Next.js 13, Tailwind, Context, RestAPI</p><br>
+                        <a href="https://dictionarywebapp-kappa.vercel.app/" class="portfolio_link portfolio_btn portfolio-btn portfolio_popup-link" target="_blank" rel="noopener noreferrer nofollow"><img src="./images/r-portfolio2.png" alt="Dictionary project image"></a>
+                        <div class="portfolio_details">
+                            <p class="portfolio_name">
+                                * <b>Dictionary Web App</b> - Working with RestAPI and ContextAPI <br>
+                            </p>
+                            <a href="https://dictionarywebapp-kappa.vercel.app/" class="portfolio_link portfolio_btn portfolio-btn portfolio_popup-link" target="_blank" rel="noopener noreferrer nofollow">Open website</a>
+                        </div>
+                    </div>
                     <div class="portfolio_block" id="project-figmaToHtml">
                         <p class="portfolio_name portfolio_tech">HTML, CSS, Vanilla JS</p><br>
-                        <img src="./images/r-portfolio1.png" alt="Growbe landing project image">
+                        <a href="https://allbirds-landing.vercel.app/" class="portfolio_link portfolio_btn portfolio-btn portfolio_popup-link" target="_blank" rel="noopener noreferrer nofollow"><img src="./images/r-portfolio1.png" alt="Allbirds landing project image"></a>
                         <div class="portfolio_details">
                             <p class="portfolio_name">
                                 * <b>Allbirds</b> - I can make professional sites for businesses. <br>
                             </p>
                             <a href="https://allbirds-landing.vercel.app/" class="portfolio_link portfolio_btn portfolio-btn portfolio_popup-link" target="_blank" rel="noopener noreferrer nofollow">Open website</a>
-                        </div>
-                    </div>
-                    <div class="portfolio_block">
-                        <p class="portfolio_name portfolio_tech">Next.js, Tailwind, Context</p><br>
-                        <img src="./images/r-portfolio2.png" alt="Philanthropy landing project image">
-                        <div class="portfolio_details">
-                            <p class="portfolio_name">Dictionary Web App</p>
-                            <a href="https://dictionarywebapp-kappa.vercel.app/" class="portfolio_link portfolio_btn portfolio-btn portfolio_popup-link" target="_blank" rel="noopener noreferrer nofollow">Open website</a>
-                        </div>
-                    </div>
-                    <div class="portfolio_block">
-                        <p class="portfolio_name portfolio_tech">HTML, CSS, Vanilla JS</p><br>
-                        <div class="portfolio_popup">
-                            <div class="portfolio_popup-text">
-                                <span class="portfolio_popup-close popup-close">x</span>
-                                HTML, CSS, Javascript E-commerce store. <br> Slider, Displaying products from db, <br> Searching products etc... (project under construction) <br><br> <a class="portfolio_popup-link" href="https://california-store.vercel.app/" target="_blank" rel="noopener noreferrer nofollow">link to this site</a>
-                            </div>
-                        </div>
-                        <img src="./images/r-portfolio3.png" alt="California store project image">
-                        <div class="portfolio_details">
-                            <p class="portfolio_name">California Small-to-Medium size E-commerce</p>
-                            <button class="portfolio_link portfolio_btn portfolio-btn">View Details</button>
                         </div>
                     </div>
                 </div>
@@ -103,7 +111,8 @@
                             <p>Making advanced real-world Frontend and backend Javascript features</p>
                         </div>
                         <p class="specialization_text">I am a Frontend Engineer, but I also work on Backend with Node.js. <br><br> But, most importantly, I love difficult tasks.</p>
-                        <a class="specialization_link" href="/projects#project-fixing">See example of work</a>
+                        <a class="specialization_link" href="https://remindemy-react.vercel.app/" target="_blank" rel="noopener noreferrer nofollow">See example of work</a>;
+                        <a class="specialization_link" href="https://entertainmentwebapp.vercel.app/main" target="_blank" rel="noopener noreferrer nofollow">See another example</a>
                     </div>
                     <div class="specialization_block">
                         <div class="specialization_title">
@@ -111,7 +120,7 @@
                             <p>Keeping up to date</p>
                         </div>
                         <p class="specialization_text">I use all the latest technologies including React, Next.js, Tailwind and more! <br><br> I learn new things everyday.</p>
-                        <a class="specialization_link" href="/projects#project-eCommerce">See example of work</a>
+                        <a class="specialization_link" href="/projects#project-entertainment">See projects</a>
                     </div>
                     <div class="specialization_block">
                         <div class="specialization_title">
@@ -119,7 +128,7 @@
                             <p>Making beautiful-useful pages</p>
                         </div>
                         <p class="specialization_text">I have a good eye on ux & ui. <br><br> I am working with HTML and CSS for more then 1.5 year.</p>
-                        <a class="specialization_link" href="/projects#project-figmaToHtml">See example of work</a>
+                        <!-- <a class="specialization_link" href="/projects#project-figmaToHtml">See example of work</a> -->
                     </div>
                     <div class="specialization_block">
                         <div class="specialization_title">
@@ -127,7 +136,7 @@
                             <p>Responsive-mobile page development</p>
                         </div>
                         <p class="specialization_text">You will never get problems with my websites on different screens</p>
-                        <a class="specialization_link" href="/projects#project-figmaToHtml">See example of work</a>
+                        <a class="specialization_link" href="https://allbirds-landing.vercel.app/" target="_blank" rel="noopener noreferrer nofollow">See example of work</a>
                     </div>
                 </div>
                 <div class="button">
