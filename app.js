@@ -84,6 +84,8 @@ router.post(
       return res.send('Error uploading file');
     }
 
+  },
+  function (req, res, next) {
     transporter.sendMail(mailOptions, function (err, data) {
       if (err) {
         console.log('Error ' + err);
@@ -93,9 +95,6 @@ router.post(
         res.sendFile(path.join(__dirname, '/contact_success.html'));
       }
     });
-    
-  },
-  function (req, res, next) {
     res.sendFile(path.join(__dirname, '/contact_success.html'));
   }
 );
