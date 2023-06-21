@@ -24,5 +24,7 @@ export default function emailForm() {
         window.location.host +
         '/contact_success.html';
     }
+
+    e.currentTarget.submit();
   });
 }
