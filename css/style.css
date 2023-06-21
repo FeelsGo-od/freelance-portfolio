@@ -415,8 +415,7 @@
     align-items: center; }
     .specialization_title img {
       width: 28px;
-      display: inline;
-      filter: blur(0.2px); }
+      display: inline; }
     .specialization_title p {
       margin-left: 15px;
       font-family: 'Gilroy-SemiBold';

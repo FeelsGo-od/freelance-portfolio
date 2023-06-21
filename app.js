@@ -86,15 +86,6 @@ router.post(
 
   },
   function (req, res, next) {
-    transporter.sendMail(mailOptions, function (err, data) {
-      if (err) {
-        console.log('Error ' + err);
-      } else {
-        console.log('Email sent successfully');
-        next();
-        res.sendFile(path.join(__dirname, '/contact_success.html'));
-      }
-    });
     res.sendFile(path.join(__dirname, '/contact_success.html'));
   }
 );
