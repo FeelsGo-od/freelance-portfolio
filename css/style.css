@@ -656,7 +656,7 @@
     letter-spacing: 0.5px;
     font-size: 26px; }
   .about-me img {
-    width: 65%; }
+    width: 42%; }
     @media (max-width: 1024px) {
       .about-me img {
         width: 100%; } }
